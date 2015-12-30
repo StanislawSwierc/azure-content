@@ -23,8 +23,8 @@
 
 A set of samples are provided to help you get started running MapReduce jobs on Hadoop clusters using Azure HDInsight. These samples are made available on each of the HDInsight managed clusters that you create. Running these samples will familiarize you with using Azure PowerShell cmdlets to run jobs on Hadoop clusters.
 
-- [**Word count**][hdinsight-sample-wordcount]: Counts word occurrences in a text file.
-- [**C# streaming word count**][hdinsight-sample-csharp-streaming]: Counts word occurrences in a text file using the Hadoop streaming interface.
+- [**Word count**](#hdinsight-sample-wordcount): Counts word occurrences in a text file.
+- [**C# streaming word count**](#hdinsight-sample-csharp-streaming): Counts word occurrences in a text file using the Hadoop streaming interface.
 - [**Pi estimator**][hdinsight-sample-pi-estimator]: Uses a statistical (quasi-Monte Carlo) method to estimate the value of pi.
 - [**10-GB Graysort**][hdinsight-sample-10gb-graysort]: Run a general purpose GraySort on a 10 GB file by using HDInsight. There are three jobs to run: Teragen to generate the data, Terasort to sort the data, and Teravalidate to confirm that the data has been properly sorted.
 
@@ -48,7 +48,7 @@ Nowadays, a lot of people choose Hive and Pig over MapReduce.  For more informat
 - **an HDInsight cluster**. For instructions on the various ways in which such clusters can be created, see [Create Hadoop clusters in HDInsight](hdinsight-provision-clusters.md).
 - **A workstation with Azure PowerShell**. See [Install Azure PowerShell 1.0 and greater](hdinsight-administer-use-powershell.md#install-azure-powershell-10-and-greater).
 
-## Word count - Java 
+## <a name="hdinsight-sample-wordcount"></a>Word count - Java 
 
 To submit a MapReduce project, you first create a MapReduce job definition. In the job definition, you specify the MapReduce program jar file and the location of the jar file, which is **wasb:///example/jars/hadoop-mapreduce-examples.jar**, the class name, and the arguments.  The wordcount MapReduce program takes two arguments: the source file that will be used to count words, and the location for output.
 
@@ -114,7 +114,7 @@ For the procedure of developing a Java MapReduce program, see - [Develop Java Ma
 
 3. Set the first 3 variables, and run the script.
 
-## Word count - C# streaming
+## <a name="hdinsight-sample-csharp-streaming"></a> Word count - C# streaming
 
 Hadoop provides a streaming API to MapReduce, which enables you to write map and reduce functions in languages other than Java.
 
@@ -994,9 +994,7 @@ The code for the TeraSort MapReduce program is presented for inspection in this 
 
 [hdinsight-samples]: hdinsight-run-samples.md
 [hdinsight-sample-10gb-graysort]: hdinsight-sample-10gb-graysort.md
-[hdinsight-sample-csharp-streaming]: hdinsight-sample-csharp-streaming.md
 [hdinsight-sample-pi-estimator]: hdinsight-sample-pi-estimator.md
-[hdinsight-sample-wordcount]: hdinsight-sample-wordcount.md
 
 [hdinsight-use-hive]: hdinsight-use-hive.md
 [hdinsight-use-pig]: hdinsight-use-pig.md
